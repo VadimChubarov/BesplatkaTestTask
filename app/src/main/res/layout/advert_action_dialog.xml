@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/advert_action_dialog_layout">
+
+    <EditText
+        android:id="@+id/et_advert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:maxLength="50"
+        android:hint="title"/>
+
+    <EditText
+        android:id="@+id/et_advert_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="300"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:hint="description"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_coin"
+            android:layout_gravity="center" />
+    <EditText
+        android:id="@+id/et_advert_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:hint="price" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_placeholder"
+            />
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="50"
+        android:textSize="16sp"
+        android:hint="city"
+        android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_avatar"
+            android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/et_advert_seller_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="seller"
+        android:maxLength="50"
+        android:textSize="16sp"
+        android:layout_margin="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_auricular_phone_symbol_in_a_circle" />
+    <EditText
+        android:id="@+id/et_advert_seller_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:maxLength="15"
+        android:textSize="16sp"
+        android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_advert"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button_save_advert" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button_cancel" />
+</LinearLayout>
